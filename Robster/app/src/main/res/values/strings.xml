@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Robster</string>
+    <string name="paired_devices">Show Paired Devices</string>
+    <string name="discover_new_devices">Dicover New Devices</string>
+    <string name="title_activity_controller">controllerActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="bluetooth_snack">Error With Bluetooth</string>
+    <string name="bluesnack_action">Close</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

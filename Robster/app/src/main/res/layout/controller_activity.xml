@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controllerActivity">
+
+        <TextView
+            android:text="Not Connected"
+            android:id="@+id/ConnectionStatus"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:layout_height="20dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            />
+    <SeekBar
+        android:layout_below="@+id/ConnectionStatus"
+        android:id="@+id/PowerBar"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:rotation="90"
+        android:progress="0"
+        android:max="10"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        />
+    <TextView
+        android:id="@+id/PowerTxt"
+        android:text="Power"
+        android:layout_below="@+id/PowerBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/PowerBar"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="40dp"
+        />
+
+        <Button
+            android:layout_marginEnd="120dp"
+            android:text="Left"
+            android:id="@+id/TurnLeftBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignEnd="@+id/TurnRightBtn"
+            />
+
+        <Button
+            android:layout_marginEnd="40dp"
+            android:text="Right"
+            android:id="@+id/TurnRightBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/DisconnectSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="Disconnect"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"/>
+
+
+</RelativeLayout>
